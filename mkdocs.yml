@@ -48,7 +48,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Plans:
-    - Issue #170 – Template Agents: plans/issue-170-plan.md
+    - "Issue #170 – Template Agents": plans/issue-170-plan.md
 
 extra_css:
   - stylesheets/extra.css
