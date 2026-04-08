@@ -1,0 +1,31 @@
+sequenceDiagram
+    participant User
+    participant UI as TemplateBrowserModal
+    participant Hook as useAgentTemplates
+    participant Tauri as Tauri Commands
+    participant Rust as Rust Backend
+    participant FS as File System
+
+    User->>UI: Click "Browse Templates"
+    UI->>Hook: listTemplates()
+    Hook->>Tauri: list_agent_templates()
+    Tauri->>Rust: Load templates.json
+    Rust->>FS: Read template metadata
+    FS-->>Rust: templates[]
+    Rust-->>Tauri: templates[]
+    Tauri-->>Hook: templates
+    Hook-->>UI: templates
+    UI-->>User: Show template cards
+
+    User->>UI: Click "Import"
+    UI->>Hook: importTemplate(templateId)
+    Hook->>Tauri: import_agent_template(id)
+    Tauri->>Rust: Import handler
+    Rust->>FS: Create agent directory
+    Rust->>FS: Copy SOUL.md + IDENTITY.md
+    Rust->>FS: Write config entry
+    FS-->>Rust: Success
+    Rust-->>Tauri: New agent
+    Tauri-->>Hook: agent
+    Hook-->>UI: Close modal
+    UI-->>User: Success toast

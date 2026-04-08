@@ -1,0 +1,38 @@
+graph TD
+    subgraph Bundled["Bundled Templates"]
+        T1["code-review-expert"]
+        T2["documentation-writer"]
+        T3["test-engineer"]
+        T4["devops-architect"]
+        T5["security-analyst"]
+        T6["database-designer"]
+        T7["api-designer"]
+        T8["frontend-specialist"]
+        T9["backend-engineer"]
+        T10["project-planner"]
+    end
+
+    subgraph Frontend["Template Browser Modal"]
+        Grid["Card Grid"]
+        Filter["Category Filter"]
+        Preview["Preview Panel"]
+        Import["Import Button"]
+    end
+
+    subgraph Backend["Rust Import Handler"]
+        Load["Load Template"]
+        Generate["Generate ID"]
+        Create["Create Directory"]
+        Copy["Copy Files"]
+        Config["Write Config"]
+    end
+
+    subgraph Local["Local Agent"]
+        Soul["SOUL.md"]
+        Identity["IDENTITY.md"]
+        ConfigFile["openclaw.json"]
+    end
+
+    Bundled -->|list_agent_templates| Frontend
+    Frontend -->|import_agent_template| Backend
+    Backend --> Local

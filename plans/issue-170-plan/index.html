@@ -20,7 +20,7 @@
     
     
       
-        <title>Issue #170: Add 10 template agents - Implementation Plans</title>
+        <title>Issue #170: Add 10 Template Agents for Users to Import - Implementation Plans</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#issue-170-add-10-template-agents" class="md-skip">
+        <a href="#issue-170-add-10-template-agents-for-users-to-import" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Issue #170: Add 10 template agents
+              Issue #170: Add 10 Template Agents for Users to Import
             
           </span>
         </div>
@@ -465,21 +465,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files-to-modify" class="md-nav__link">
+  <a href="#files" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Files to Modify
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#new-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        New Files
+        Files
       
     </span>
   </a>
@@ -498,10 +487,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tests" class="md-nav__link">
+  <a href="#diagrams" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tests
+        Diagrams
       
     </span>
   </a>
@@ -513,6 +502,17 @@
     <span class="md-ellipsis">
       
         Success
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
       
     </span>
   </a>
@@ -539,49 +539,65 @@
   
 
 
-<h1 id="issue-170-add-10-template-agents">Issue #170: Add 10 template agents<a class="headerlink" href="#issue-170-add-10-template-agents" title="Permanent link">¶</a></h1>
+<h1 id="issue-170-add-10-template-agents-for-users-to-import">Issue #170: Add 10 Template Agents for Users to Import<a class="headerlink" href="#issue-170-add-10-template-agents-for-users-to-import" title="Permanent link">¶</a></h1>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>Create 10 pre-configured agent templates for import from My Agents screen.</p>
 <h2 id="root-cause">Root Cause<a class="headerlink" href="#root-cause" title="Permanent link">¶</a></h2>
 <p>Users start from scratch with no templates.</p>
 <h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">¶</a></h2>
-<ol>
-<li>Create 10 templates in apps/desktop/src/assets/agent-templates/</li>
-<li>Add template browser UI</li>
-<li>Implement backend commands</li>
-<li>Document location</li>
-</ol>
-<h2 id="files-to-modify">Files to Modify<a class="headerlink" href="#files-to-modify" title="Permanent link">¶</a></h2>
-<ul>
-<li>tauri.ts: template commands</li>
-<li>CreateAgentWizard.tsx: template option</li>
-<li>AgentList.tsx: Browse button</li>
-<li>agents.rs: implement commands</li>
-</ul>
-<h2 id="new-files">New Files<a class="headerlink" href="#new-files" title="Permanent link">¶</a></h2>
-<ul>
-<li>templates.json</li>
-<li>10 template dirs (SOUL.md, IDENTITY.md)</li>
-<li>TemplateBrowserModal.tsx</li>
-</ul>
+<p>Bundle 10 templates from reference repos.</p>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>templates.json</td>
+<td>NEW</td>
+</tr>
+<tr>
+<td>10 template dirs</td>
+<td>NEW</td>
+</tr>
+<tr>
+<td>TemplateBrowserModal.tsx</td>
+<td>NEW</td>
+</tr>
+<tr>
+<td>AgentList.tsx</td>
+<td>Add button</td>
+</tr>
+<tr>
+<td>agents.rs</td>
+<td>Add commands</td>
+</tr>
+</tbody>
+</table>
 <h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">¶</a></h2>
 <ol>
-<li>Create content</li>
+<li>Create templates</li>
 <li>Backend commands</li>
 <li>Frontend UI</li>
-<li>Test</li>
+<li>Tests</li>
 </ol>
-<h2 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">¶</a></h2>
-<ul>
-<li>Unit, Integration, E2E</li>
-<li>Edge cases</li>
-</ul>
+<h2 id="diagrams">Diagrams<a class="headerlink" href="#diagrams" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../issue-170-architecture.png" data-desc-position="bottom"><img alt="Architecture" src="../issue-170-architecture.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../issue-170-flow.png" data-desc-position="bottom"><img alt="Flow" src="../issue-170-flow.png"></a></p>
 <h2 id="success">Success<a class="headerlink" href="#success" title="Permanent link">¶</a></h2>
 <ul>
 <li>10 templates</li>
-<li>Working browser</li>
-<li>Import flow</li>
-<li>Offline</li>
+<li>Import works</li>
+<li>E2E pass</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h2>
+<ul>
+<li>Issue #170</li>
+<li>Reference repos</li>
+<li>ADR-39, ADR-41, ADR-42</li>
 </ul>
 
 
