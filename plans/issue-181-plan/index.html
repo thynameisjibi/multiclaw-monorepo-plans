@@ -7,13 +7,11 @@
       
       
       
-        <link rel="canonical" href="https://multiplai-tech-v2.github.io/multiclaw-monorepo-plans/plans/issue-170-plan/">
+        <link rel="canonical" href="https://multiplai-tech-v2.github.io/multiclaw-monorepo-plans/plans/issue-181-plan/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../issue-170-plan/">
       
-      
-        <link rel="next" href="../issue-181-plan/">
       
       
         
@@ -24,7 +22,7 @@
     
     
       
-        <title>Issue #170 – Template Agents - Implementation Plans</title>
+        <title>Issue #181 – Zudoku API Docs - Implementation Plans</title>
       
     
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#issue-170-add-10-template-agents-for-users-to-import" class="md-skip">
+        <a href="#issue-181-create-automated-api-documentation-with-zudoku-for-cloud-api" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Issue #170 – Template Agents
+              Issue #181 – Zudoku API Docs
             
           </span>
         </div>
@@ -232,7 +230,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../issue-170-plan/" class="md-tabs__link">
           
   
   
@@ -385,6 +383,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-170-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issue #170 – Template Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -404,7 +430,7 @@
   <span class="md-ellipsis">
     
   
-    Issue #170 – Template Agents
+    Issue #181 – Zudoku API Docs
   
 
     
@@ -422,7 +448,7 @@
   <span class="md-ellipsis">
     
   
-    Issue #170 – Template Agents
+    Issue #181 – Zudoku API Docs
   
 
     
@@ -511,6 +537,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Implementation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-openapi-export-setup-cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: OpenAPI Export Setup (cloud-api)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-zudoku-app-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Zudoku App Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-monorepo-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Monorepo Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-branding-polish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Branding &amp; Polish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Testing &amp; Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -548,10 +635,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bundled-template-catalog-reusing-existing-agent-import-pipeline" class="md-nav__link">
+  <a href="#architecture-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bundled Template Catalog Reusing Existing Agent Import Pipeline
+        Architecture Flow
       
     </span>
   </a>
@@ -559,10 +646,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-flow-for-importing-a-template-agent" class="md-nav__link">
+  <a href="#build-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Flow for Importing a Template Agent
+        Build Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-site-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Site Structure
       
     </span>
   </a>
@@ -574,38 +672,32 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#acceptance-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceptance Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../issue-181-plan/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Issue #181 – Zudoku API Docs
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -708,6 +800,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Implementation Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-openapi-export-setup-cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: OpenAPI Export Setup (cloud-api)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-zudoku-app-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Zudoku App Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-monorepo-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Monorepo Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-branding-polish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Branding &amp; Polish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Testing &amp; Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -745,10 +898,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bundled-template-catalog-reusing-existing-agent-import-pipeline" class="md-nav__link">
+  <a href="#architecture-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bundled Template Catalog Reusing Existing Agent Import Pipeline
+        Architecture Flow
       
     </span>
   </a>
@@ -756,10 +909,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-flow-for-importing-a-template-agent" class="md-nav__link">
+  <a href="#build-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Flow for Importing a Template Agent
+        Build Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-site-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Site Structure
       
     </span>
   </a>
@@ -768,6 +932,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceptance-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceptance Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
   
 </li>
       
@@ -791,31 +977,31 @@
   
 
 
-<h1 id="issue-170-add-10-template-agents-for-users-to-import">Issue #170: Add 10 Template Agents for Users to Import<a class="headerlink" href="#issue-170-add-10-template-agents-for-users-to-import" title="Permanent link">¶</a></h1>
+<h1 id="issue-181-create-automated-api-documentation-with-zudoku-for-cloud-api">Issue #181: Create automated API documentation with Zudoku for cloud-api<a class="headerlink" href="#issue-181-create-automated-api-documentation-with-zudoku-for-cloud-api" title="Permanent link">¶</a></h1>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
-<p>Add a first-party template-agent catalog to the desktop app so users can import one of 10 curated starter agents instead of beginning from a blank agent. The implementation should reuse the existing agent import/create pipeline where possible and expose template entry points from <strong>My Agents</strong> and the create-agent wizard.</p>
+<p>Create a comprehensive, automated documentation site for <code>@multiclaw/cloud-api</code> using Zudoku (https://zudoku.dev), integrating OpenAPI schema export from the existing NestJS/Swagger setup and building a branded developer portal with API reference and usage guides.</p>
 <h2 id="root-cause-analysis">Root Cause Analysis<a class="headerlink" href="#root-cause-analysis" title="Permanent link">¶</a></h2>
-<p>The current desktop experience has two gaps:</p>
-<ol>
-<li><strong>There is no built-in template catalog.</strong> The agents page supports creating a blank agent and importing a zip, but it does not ship with any curated starter agents.</li>
-<li><strong>The template UX is only partially scaffolded.</strong> <code>CreateAgentWizard.tsx</code> already renders a conditional <strong>Start from template</strong> link when <code>clawHubReachable</code> is true, but the link has no behavior and there is no template data model, picker UI, or backend command to materialize a template into a real agent.</li>
-</ol>
-<p>That leaves users with a blank-slate flow even though the product docs/ADRs already point toward templated agent creation. Issue #170 also introduces a product-level change in direction: instead of waiting for a community-powered ClawHub agent-template catalog, MultiClaw now needs a guaranteed set of 10 curated templates available immediately.</p>
+<p><strong>Current State:</strong>
+- Cloud API has Swagger/OpenAPI documentation available at <code>/api/v1/docs</code> endpoint
+- Documentation is only accessible when the API server is running
+- No standalone, versioned documentation site exists
+- No integration with developer guides or authentication documentation</p>
+<p><strong>Desired State:</strong>
+- Static, deployable documentation site using Zudoku
+- Auto-generated API reference from OpenAPI schema
+- Integrated guides (Getting Started, Authentication, Usage)
+- MultiClaw branding (logo, colors, theme)
+- Build integration with monorepo (Turbo)</p>
 <h2 id="proposed-solution">Proposed Solution<a class="headerlink" href="#proposed-solution" title="Permanent link">¶</a></h2>
-<p>Implement a <strong>bundled template catalog</strong> for the desktop app and route imports through the existing agent creation/import primitives.</p>
-<p>Recommended shape:</p>
-<ul>
-<li>Store 10 curated template bundles plus a lightweight metadata manifest in the desktop app source tree.</li>
-<li>Add backend commands to:</li>
-<li>list available template summaries for the UI</li>
-<li>import a selected template into the user’s OpenClaw environment</li>
-<li>Reuse existing agent-import behavior as much as possible so template imports inherit the same file-writing, model-restoration, skill-writing, and validation paths already used for zip imports.</li>
-<li>Add a reusable <strong>template picker</strong> dialog/sheet that can be opened from:</li>
-<li>the <strong>My Agents</strong> empty state / header CTA</li>
-<li>the <strong>Start from template</strong> link in <code>CreateAgentWizard.tsx</code></li>
-<li>Keep the catalog behind a small abstraction so the source can later evolve from “bundled templates” to “bundled + ClawHub” without rewriting the UI.</li>
-</ul>
-<p>A practical implementation path is to package templates in the same logical structure already supported by agent export/import (<code>manifest</code>, <code>SOUL.md</code>, <code>IDENTITY.md</code>, optional <code>USER.md</code>, config excerpt, skills). That avoids inventing a second agent-template format and lowers backend risk.</p>
+<ol>
+<li>Create new Zudoku app at <code>apps/cloud-api-docs</code> in the monorepo</li>
+<li>Add OpenAPI schema export endpoint to cloud-api (in addition to Swagger UI)</li>
+<li>Configure Zudoku to consume the exported OpenAPI JSON file</li>
+<li>Create documentation pages (mdx) for guides</li>
+<li>Apply MultiClaw branding via Zudoku theme configuration</li>
+<li>Integrate with Turbo build system</li>
+<li>Add build scripts to export OpenAPI and build docs</li>
+</ol>
 <h2 id="files-to-modify">Files to Modify<a class="headerlink" href="#files-to-modify" title="Permanent link">¶</a></h2>
 <table>
 <thead>
@@ -826,56 +1012,40 @@
 </thead>
 <tbody>
 <tr>
-<td><code>apps/desktop/src/components/agents/AgentList.tsx</code></td>
-<td>Add template CTA(s) to the hero and/or empty state so users can browse templates from <strong>My Agents</strong>.</td>
+<td><code>apps/cloud-api/src/main.ts</code></td>
+<td>Add OpenAPI JSON export endpoint at <code>/api/v1/docs-json</code></td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/components/agents/CreateAgentWizard.tsx</code></td>
-<td>Replace the inert <strong>Start from template</strong> link with real picker-opening behavior and template prefill/import flow.</td>
+<td><code>apps/cloud-api/package.json</code></td>
+<td>Add script to export OpenAPI schema to file</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/lib/tauri.ts</code></td>
-<td>Add typed IPC wrappers for listing/importing bundled templates.</td>
+<td><code>turbo.json</code></td>
+<td>Add build pipeline dependency for docs app</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/lib/types.ts</code></td>
-<td>Add shared TypeScript types for template summaries/details/import responses.</td>
+<td><code>apps/cloud-api-docs/zudoku.config.ts</code></td>
+<td><strong>NEW</strong> - Zudoku configuration with OpenAPI integration</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/stores/agentStore.ts</code></td>
-<td>Optionally add store helpers for template import/reload flow if the UI should stay store-driven.</td>
+<td><code>apps/cloud-api-docs/package.json</code></td>
+<td><strong>NEW</strong> - Zudoku dependencies and scripts</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src-tauri/src/commands/agents.rs</code></td>
-<td>Add <code>list_agent_templates</code> and <code>import_agent_template</code> commands, reusing existing import/create helpers.</td>
+<td><code>apps/cloud-api-docs/docs/introduction.mdx</code></td>
+<td><strong>NEW</strong> - Getting started guide</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src-tauri/src/lib.rs</code></td>
-<td>Register new Tauri commands.</td>
+<td><code>apps/cloud-api-docs/docs/authentication.mdx</code></td>
+<td><strong>NEW</strong> - Authentication guide</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/locales/en.json</code></td>
-<td>Add strings for template catalog, cards, import CTA, errors, and success toasts.</td>
+<td><code>apps/cloud-api-docs/docs/usage.mdx</code></td>
+<td><strong>NEW</strong> - Usage examples guide</td>
 </tr>
 <tr>
-<td><code>apps/desktop/e2e/features/agents.feature</code></td>
-<td>Add/upgrade scenarios covering browsing templates and importing one into My Agents.</td>
-</tr>
-<tr>
-<td><code>apps/desktop/e2e/steps/agents.ts</code></td>
-<td>Implement step definitions for template browsing/import flows.</td>
-</tr>
-<tr>
-<td><code>apps/desktop/src/components/agents/__tests__/CreateAgentWizard.test.tsx</code></td>
-<td>Extend tests to cover template entry-point behavior.</td>
-</tr>
-<tr>
-<td><code>apps/desktop/src/components/agents/__tests__/AgentList.test.tsx</code></td>
-<td>Cover empty-state/header template CTA rendering and interactions.</td>
-</tr>
-<tr>
-<td><code>apps/desktop/src/components/agents/__tests__/AgentImport.test.tsx</code></td>
-<td>Reuse or mirror conflict/success expectations if template import shares the same post-import UX.</td>
+<td><code>apps/cloud-api-docs/public/multiclaw-logo.svg</code></td>
+<td><strong>NEW</strong> - MultiClaw logo for branding</td>
 </tr>
 </tbody>
 </table>
@@ -889,62 +1059,122 @@
 </thead>
 <tbody>
 <tr>
-<td><code>apps/desktop/src/components/agents/AgentTemplatePicker.tsx</code></td>
-<td>Reusable modal/sheet that lists the 10 template agents, shows preview metadata, and triggers import/prefill actions.</td>
+<td><code>apps/cloud-api-docs/</code></td>
+<td>New Zudoku documentation app directory</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src/components/agents/__tests__/AgentTemplatePicker.test.tsx</code></td>
-<td>Unit coverage for template listing, selection, loading, error, and import actions.</td>
+<td><code>apps/cloud-api-docs/zudoku.config.ts</code></td>
+<td>Zudoku configuration (OpenAPI, theme, navigation)</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src-tauri/src/openclaw/agent_templates.rs</code></td>
-<td>Rust helper module for reading bundled template metadata/assets and delegating import through existing agent import helpers.</td>
+<td><code>apps/cloud-api-docs/package.json</code></td>
+<td>Package configuration with zudoku dependency</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src-tauri/templates/index.json</code></td>
-<td>Catalog manifest for the 10 bundled templates, including id, name, emoji, summary, model, and recommended skills.</td>
+<td><code>apps/cloud-api-docs/tsconfig.json</code></td>
+<td>TypeScript configuration</td>
 </tr>
 <tr>
-<td><code>apps/desktop/src-tauri/templates/&lt;template-id&gt;/...</code></td>
-<td>One directory per curated template containing <code>SOUL.md</code>, <code>IDENTITY.md</code>, optional <code>USER.md</code>, and any bundled skill/reference assets.</td>
+<td><code>apps/cloud-api-docs/docs/introduction.mdx</code></td>
+<td>Getting started documentation</td>
+</tr>
+<tr>
+<td><code>apps/cloud-api-docs/docs/authentication.mdx</code></td>
+<td>Authentication and authorization guide</td>
+</tr>
+<tr>
+<td><code>apps/cloud-api-docs/docs/usage.mdx</code></td>
+<td>Usage examples and tutorials</td>
+</tr>
+<tr>
+<td><code>apps/cloud-api-docs/public/multiclaw-logo.svg</code></td>
+<td>MultiClaw branding logo</td>
+</tr>
+<tr>
+<td><code>apps/cloud-api/scripts/export-openapi.ts</code></td>
+<td>Script to export OpenAPI schema to JSON file</td>
 </tr>
 </tbody>
 </table>
 <h2 id="implementation-steps">Implementation Steps<a class="headerlink" href="#implementation-steps" title="Permanent link">¶</a></h2>
+<h3 id="phase-1-openapi-export-setup-cloud-api">Phase 1: OpenAPI Export Setup (cloud-api)<a class="headerlink" href="#phase-1-openapi-export-setup-cloud-api" title="Permanent link">¶</a></h3>
 <ol>
-<li><strong>Define the template source format.</strong> Decide whether bundled templates live as export-style bundles or as a directory-per-template manifest + markdown files; prefer the format that reuses the current import pipeline with the fewest new code paths.</li>
-<li><strong>Create the 10 curated template assets.</strong> Adapt the requested roles (Code Review Expert, Documentation Writer, Test Engineer, etc.) into app-owned template files with stable IDs, emoji, summaries, and optional recommended skills.</li>
-<li><strong>Add Rust template-catalog helpers.</strong> Implement a loader that enumerates the bundled templates, validates required files, and returns display-safe metadata for the UI.</li>
-<li><strong>Add Tauri commands.</strong> Expose commands to list template summaries and import a chosen template by ID; unknown or corrupted templates should fail with friendly errors.</li>
-<li><strong>Reuse existing import/create internals.</strong> Route template materialization through <code>create_agent_impl</code> plus existing workspace-writing/import helpers so model, identity, user profile, and skills land in the same on-disk layout as normal imports.</li>
-<li><strong>Build the template picker UI.</strong> Add a dedicated picker component with loading, empty, error, and success states. Each card should show emoji, title, purpose, and recommended-skill hints.</li>
-<li><strong>Wire entry points.</strong> Open the picker from the My Agents page and from the wizard’s <strong>Start from template</strong> link. Decide whether wizard selection should prefill draft state or directly import a template-created agent; document the chosen behavior in code comments/tests.</li>
-<li><strong>Handle name-conflict behavior.</strong> Reuse the rename/overwrite pattern already present in zip import so template imports do not silently fail or clobber existing agents.</li>
-<li><strong>Add i18n and polish.</strong> Move all new labels, descriptions, button text, and errors into <code>en.json</code> and follow existing accessibility/dialog patterns.</li>
-<li><strong>Add automated coverage.</strong> Write Rust tests for template discovery/import, frontend unit tests for picker flows, and E2E coverage for browsing/importing a template from My Agents.</li>
+<li>Add <code>/api/v1/docs-json</code> endpoint to <code>main.ts</code> that serves raw OpenAPI JSON</li>
+<li>Create <code>scripts/export-openapi.ts</code> to generate <code>openapi.json</code> file</li>
+<li>Add <code>npm run export-openapi</code> script to <code>apps/cloud-api/package.json</code></li>
+<li>Test that OpenAPI JSON is correctly exported</li>
+</ol>
+<h3 id="phase-2-zudoku-app-creation">Phase 2: Zudoku App Creation<a class="headerlink" href="#phase-2-zudoku-app-creation" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Create <code>apps/cloud-api-docs/</code> directory structure:
+   </p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>apps/cloud-api-docs/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── docs/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── introduction.mdx
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── authentication.mdx
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── usage.mdx
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── public/
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── multiclaw-logo.svg
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── zudoku.config.ts
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── package.json
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>└── tsconfig.json
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Create <code>zudoku.config.ts</code> with:</p>
+</li>
+<li>OpenAPI file reference (<code>../cloud-api/openapi.json</code>)</li>
+<li>Navigation structure</li>
+<li>MultiClaw theme (colors, logo)</li>
+<li>
+<p>Site metadata</p>
+</li>
+<li>
+<p>Create <code>package.json</code> with:</p>
+</li>
+<li><code>zudoku</code> dependency</li>
+<li><code>dev</code>, <code>build</code>, <code>preview</code> scripts</li>
+<li>
+<p><code>generate-openapi</code> script to pull from cloud-api</p>
+</li>
+<li>
+<p>Create documentation pages (mdx):</p>
+</li>
+<li><strong>introduction.mdx</strong>: Overview, quick start, architecture</li>
+<li><strong>authentication.mdx</strong>: JWT tokens, Bearer auth, examples</li>
+<li><strong>usage.mdx</strong>: Common operations, code examples, best practices</li>
+</ol>
+<h3 id="phase-3-monorepo-integration">Phase 3: Monorepo Integration<a class="headerlink" href="#phase-3-monorepo-integration" title="Permanent link">¶</a></h3>
+<ol>
+<li>Update <code>turbo.json</code> to add docs build pipeline</li>
+<li>Add <code>@multiclaw/cloud-api-docs</code> to workspace</li>
+<li>Create root-level script to build all docs</li>
+<li>Test build chain: cloud-api build → export OpenAPI → docs build</li>
+</ol>
+<h3 id="phase-4-branding-polish">Phase 4: Branding &amp; Polish<a class="headerlink" href="#phase-4-branding-polish" title="Permanent link">¶</a></h3>
+<ol>
+<li>Add MultiClaw logo to <code>public/</code> directory</li>
+<li>Configure Zudoku theme colors (indigo/purple gradient matching existing brand)</li>
+<li>Add custom CSS if needed</li>
+<li>Test responsive design and dark mode</li>
+</ol>
+<h3 id="phase-5-testing-validation">Phase 5: Testing &amp; Validation<a class="headerlink" href="#phase-5-testing-validation" title="Permanent link">¶</a></h3>
+<ol>
+<li>Run <code>npm run build</code> in docs app</li>
+<li>Verify API reference renders correctly</li>
+<li>Test all navigation links</li>
+<li>Validate OpenAPI endpoints match actual API</li>
+<li>Check branding and visual consistency</li>
 </ol>
 <h2 id="test-strategy">Test Strategy<a class="headerlink" href="#test-strategy" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>Rust unit tests:</strong></li>
-<li>catalog loader returns the 10 expected templates</li>
-<li>invalid/missing template assets fail clearly</li>
-<li>importing a template writes <code>SOUL.md</code>, <code>IDENTITY.md</code>, optional <code>USER.md</code>, and skills in the correct workspace layout</li>
-<li>imported model/subagent metadata is restored exactly like zip import</li>
-<li><strong>Frontend unit tests:</strong></li>
-<li>template CTA renders in the agents page empty state and/or hero</li>
-<li>picker shows loading, list, and error states</li>
-<li>selecting a template invokes the correct IPC wrapper</li>
-<li>wizard link opens the picker and follows the expected prefill/import behavior</li>
-<li>success closes the picker and refreshes the agents list</li>
-<li><strong>Integration tests:</strong></li>
-<li>store/UI flow reloads agents after template import</li>
-<li>conflict handling matches existing import behavior</li>
-<li><strong>Edge cases:</strong></li>
-<li>duplicate template import name</li>
-<li>unknown template ID</li>
-<li>template contains a model unavailable on the target setup</li>
-<li>missing/corrupt template asset in packaged app</li>
-<li>importing when there are zero existing agents</li>
+<li><strong>Unit tests</strong>: Verify OpenAPI export script generates valid JSON</li>
+<li><strong>Integration tests</strong>: Build docs app with exported OpenAPI file</li>
+<li><strong>Visual tests</strong>: Screenshot key pages (API reference, guides)</li>
+<li><strong>Edge cases</strong>:</li>
+<li>Empty/invalid OpenAPI file handling</li>
+<li>Missing logo or assets</li>
+<li>Build without cloud-api dependency</li>
 </ul>
 <h2 id="risks-mitigations">Risks &amp; Mitigations<a class="headerlink" href="#risks-mitigations" title="Permanent link">¶</a></h2>
 <table>
@@ -956,36 +1186,81 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>ADR/product mismatch:</strong> ADR-39 says templates come from ClawHub, while Issue #170 asks for bundled templates.</td>
-<td>Introduce a template-catalog abstraction so bundled templates are the first provider, not a one-off implementation. That preserves a migration path back to ClawHub-backed templates later.</td>
+<td>Zudoku version incompatibility with monorepo setup</td>
+<td>Pin exact zudoku version, test in isolation first</td>
 </tr>
 <tr>
-<td><strong>Duplicated import logic creates drift from zip import.</strong></td>
-<td>Reuse <code>create_agent_impl</code>, <code>write_imported_workspace_files</code>, and existing config/model restoration logic instead of inventing a second file-writing path.</td>
+<td>OpenAPI schema changes break docs build</td>
+<td>Add OpenAPI export to cloud-api build pipeline, version lock</td>
 </tr>
 <tr>
-<td><strong>Bundled content becomes hard to maintain.</strong></td>
-<td>Keep all 10 templates in a manifest-driven catalog with a consistent directory structure and add validation tests so broken assets fail in CI.</td>
+<td>Branding assets not available</td>
+<td>Use placeholder logo, create simple SVG based on existing brand colors</td>
 </tr>
 <tr>
-<td><strong>Template import UX conflicts with current wizard semantics.</strong></td>
-<td>Decide early whether templates prefill the wizard or create a finished agent directly; document one rule and cover it with unit/E2E tests.</td>
+<td>Build performance impact</td>
+<td>Use Turbo caching, only rebuild docs when OpenAPI changes</td>
 </tr>
 <tr>
-<td><strong>Asset packaging/runtime path issues in Tauri.</strong></td>
-<td>Use compile-time embedding or a well-defined packaged-assets path and add an automated test that reads template assets in the same way production code will.</td>
-</tr>
-<tr>
-<td><strong>Large scope from 10 content-rich templates plus UI/backend work.</strong></td>
-<td>Land the framework first (catalog + picker + import path), then add the 10 template payloads using a shared checklist/template schema to keep content production consistent.</td>
+<td>CORS issues with external OpenAPI URL</td>
+<td>Use local file reference (<code>type: "file"</code>) instead of URL</td>
 </tr>
 </tbody>
 </table>
 <h2 id="diagrams">Diagrams<a class="headerlink" href="#diagrams" title="Permanent link">¶</a></h2>
-<h3 id="bundled-template-catalog-reusing-existing-agent-import-pipeline">Bundled Template Catalog Reusing Existing Agent Import Pipeline<a class="headerlink" href="#bundled-template-catalog-reusing-existing-agent-import-pipeline" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../issue-170-architecture.png" data-desc-position="bottom"><img alt="Bundled Template Catalog Reusing Existing Agent Import Pipeline" src="../issue-170-architecture.png"></a></p>
-<h3 id="user-flow-for-importing-a-template-agent">User Flow for Importing a Template Agent<a class="headerlink" href="#user-flow-for-importing-a-template-agent" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../issue-170-flow.png" data-desc-position="bottom"><img alt="User Flow for Importing a Template Agent" src="../issue-170-flow.png"></a></p>
+<h3 id="architecture-flow">Architecture Flow<a class="headerlink" href="#architecture-flow" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../issue-181-architecture.png" data-desc-position="bottom"><img alt="Architecture Diagram" src="../issue-181-architecture.png"></a></p>
+<h3 id="build-pipeline">Build Pipeline<a class="headerlink" href="#build-pipeline" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Dev as Developer
+    participant Turbo as Turbo
+    participant API as cloud-api
+    participant Docs as cloud-api-docs
+
+    Dev-&gt;&gt;Turbo: npm run build
+    Turbo-&gt;&gt;API: Build cloud-api
+    API-&gt;&gt;API: Export OpenAPI JSON
+    API--&gt;&gt;Turbo: Build complete
+    Turbo-&gt;&gt;Docs: Build docs (depends on API)
+    Docs-&gt;&gt;Docs: Read openapi.json
+    Docs-&gt;&gt;Docs: Generate API reference
+    Docs-&gt;&gt;Docs: Build static site
+    Docs--&gt;&gt;Turbo: Build complete
+    Turbo--&gt;&gt;Dev: All builds successful</code></pre>
+<h3 id="documentation-site-structure">Documentation Site Structure<a class="headerlink" href="#documentation-site-structure" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>graph LR
+    Home[Home Page] --&gt; Guides[Documentation Guides]
+    Home --&gt; API[API Reference]
+
+    Guides --&gt; Intro[Getting Started]
+    Guides --&gt; Auth[Authentication]
+    Guides --&gt; Usage[Usage Examples]
+
+    API --&gt; Endpoints[All Endpoints]
+    Endpoints --&gt; Workspace[Workspace APIs]
+    Endpoints --&gt; Instance[Instance APIs]
+    Endpoints --&gt; Agent[Agent APIs]
+    Endpoints --&gt; Webhook[Webhook APIs]
+
+    style Home fill:#667eea,color:#fff
+    style API fill:#764ba2,color:#fff
+    style Guides fill:#667eea,color:#fff</code></pre>
+<h2 id="acceptance-criteria">Acceptance Criteria<a class="headerlink" href="#acceptance-criteria" title="Permanent link">¶</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> Zudoku docs app builds successfully (<code>npm run build</code> in <code>apps/cloud-api-docs</code>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> API reference auto-generated from OpenAPI (visible at <code>/api</code> route)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> Documentation guides created (Introduction, Authentication, Usage)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> MultiClaw branding applied (logo, colors, theme)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> Build scripts added to monorepo (Turbo integration)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled="" checked=""><span class="task-list-indicator"></span></label> OpenAPI export automated (script or endpoint)</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h2>
+<ul>
+<li>Zudoku Documentation: https://zudoku.dev</li>
+<li>Existing Swagger: <code>/api/v1/docs</code> (when cloud-api is running)</li>
+<li>Zudoku Config Reference: https://zudoku.dev/docs/configuration/overview</li>
+<li>API Reference Config: https://zudoku.dev/docs/configuration/api-reference</li>
+</ul>
 
 
 
