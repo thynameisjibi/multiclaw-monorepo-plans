@@ -1,0 +1,32 @@
+sequenceDiagram
+    participant User
+    participant Agents as My Agents / Wizard
+    participant Picker as AgentTemplatePicker
+    participant IPC as tauri.ts wrappers
+    participant Rust as Tauri commands
+    participant Catalog as Bundled template catalog
+    participant Import as Existing import/create helpers
+    participant FS as OpenClaw workspace/config
+
+    User->>Agents: Click "Browse templates" or "Start from template"
+    Agents->>Picker: Open picker
+    Picker->>IPC: listAgentTemplates()
+    IPC->>Rust: list_agent_templates
+    Rust->>Catalog: Load manifest + validate templates
+    Catalog-->>Rust: Template summaries
+    Rust-->>IPC: Template summaries
+    IPC-->>Picker: Cards + metadata
+    Picker-->>User: Preview 10 starter agents
+
+    User->>Picker: Choose template + confirm import
+    Picker->>IPC: importAgentTemplate(templateId, targetName?)
+    IPC->>Rust: import_agent_template
+    Rust->>Catalog: Read selected template assets
+    Rust->>Import: Reuse create/import pipeline
+    Import->>FS: Write agent config + SOUL/IDENTITY/USER + skills
+    FS-->>Import: Success
+    Import-->>Rust: AgentDisplay
+    Rust-->>IPC: Created agent
+    IPC-->>Picker: Success response
+    Picker->>Agents: Close + refresh agents list
+    Agents-->>User: New template agent visible in My Agents

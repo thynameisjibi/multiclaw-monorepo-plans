@@ -1,0 +1,15 @@
+flowchart TD
+    A[My Agents page or Create Agent wizard]
+    B[AgentTemplatePicker]
+    C[tauri.ts wrappers]
+    D[agents.rs commands]
+    E[Bundled template manifest + files]
+    F[Existing agent import/create helpers]
+    G[OpenClaw config and workspace files]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    F --> G
