@@ -1,0 +1,4 @@
+.md-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.md-content table { border-radius: 8px; overflow: hidden; }
+.md-content table th { background: var(--md-primary-fg-color); color: white; }
+.mermaid { text-align: center; margin: 2rem 0; }
