@@ -49,6 +49,7 @@ nav:
   - Home: index.md
   - Plans:
     - "Issue #170 – Template Agents": plans/issue-170-plan.md
+    - "Issue #181 – Zudoku API Docs": plans/issue-181-plan.md
 
 extra_css:
   - stylesheets/extra.css
