@@ -1,31 +1,32 @@
 sequenceDiagram
     participant User
-    participant UI as TemplateBrowserModal
-    participant Hook as useAgentTemplates
-    participant Tauri as Tauri Commands
-    participant Rust as Rust Backend
-    participant FS as File System
+    participant Agents as My Agents / Wizard
+    participant Picker as AgentTemplatePicker
+    participant IPC as tauri.ts wrappers
+    participant Rust as Tauri commands
+    participant Catalog as Bundled template catalog
+    participant Import as Existing import/create helpers
+    participant FS as OpenClaw workspace/config
 
-    User->>UI: Click "Browse Templates"
-    UI->>Hook: listTemplates()
-    Hook->>Tauri: list_agent_templates()
-    Tauri->>Rust: Load templates.json
-    Rust->>FS: Read template metadata
-    FS-->>Rust: templates[]
-    Rust-->>Tauri: templates[]
-    Tauri-->>Hook: templates
-    Hook-->>UI: templates
-    UI-->>User: Show template cards
+    User->>Agents: Click "Browse templates" or "Start from template"
+    Agents->>Picker: Open picker
+    Picker->>IPC: listAgentTemplates()
+    IPC->>Rust: list_agent_templates
+    Rust->>Catalog: Load manifest + validate templates
+    Catalog-->>Rust: Template summaries
+    Rust-->>IPC: Template summaries
+    IPC-->>Picker: Cards + metadata
+    Picker-->>User: Preview 10 starter agents
 
-    User->>UI: Click "Import"
-    UI->>Hook: importTemplate(templateId)
-    Hook->>Tauri: import_agent_template(id)
-    Tauri->>Rust: Import handler
-    Rust->>FS: Create agent directory
-    Rust->>FS: Copy SOUL.md + IDENTITY.md
-    Rust->>FS: Write config entry
-    FS-->>Rust: Success
-    Rust-->>Tauri: New agent
-    Tauri-->>Hook: agent
-    Hook-->>UI: Close modal
-    UI-->>User: Success toast
+    User->>Picker: Choose template + confirm import
+    Picker->>IPC: importAgentTemplate(templateId, targetName?)
+    IPC->>Rust: import_agent_template
+    Rust->>Catalog: Read selected template assets
+    Rust->>Import: Reuse create/import pipeline
+    Import->>FS: Write agent config + SOUL/IDENTITY/USER + skills
+    FS-->>Import: Success
+    Import-->>Rust: AgentDisplay
+    Rust-->>IPC: Created agent
+    IPC-->>Picker: Success response
+    Picker->>Agents: Close + refresh agents list
+    Agents-->>User: New template agent visible in My Agents
